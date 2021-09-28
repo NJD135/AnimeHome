@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-color: rgb(13, 5, 31);
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+#grad {
+    background-image: linear-gradient(to bottom, rgb(15, 6, 29, 0.5), rgb(13, 7, 26) 90%, rgb(13, 7, 26) 90%), url(./bgimages/animebg.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+}
+@media screen and (min-width:600px), screen and (orientation:landscape) {
+    #grad {
+        background-image: linear-gradient(to bottom, rgb(15, 6, 29, 0.5), rgb(13, 7, 26) 90%, rgb(13, 7, 26) 90%), url(./bgimages/animebgCropped.png);
+    }
+}
+.mainHeading {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 3.5em;
+}
+@media screen and (max-width:600px) {
+    .mainHeading {
+        font-size: 2.6em;
+    }
+}
+.colorHome {
+    color: rgb(224, 129, 243);
+}
+ul {
+    margin: 0;  /*remove the default margin*/
+}
+ul li{
+    display: inline;    /*not needed for alt*/  /*I think alt is better*/
+    /*float: left;*/    /*experiment(alt)*/
+    overflow: hidden;   /*experiment(alt)*/
+}
+.topNav {
+    border-bottom: solid 1px rgba(245, 245, 245, 0.2);
+    padding: 0 16px; /*top and bottom padding of nav bar is 0*/
+    /*height: 64px;*/  /*experiment(alt)*/
+}
+li a {
+    text-decoration: none;
+    display: inline-block;  /*needed?*/
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 20px;  /*all sides of the links have padding of 20px*/
+}
+li a:hover, li a:active {
+    color: rgb(233, 144, 255);
+}
+#currentTab {
+    border-bottom: solid 4px rgb(255, 129, 255);
+}
+.logo1 {
+    overflow: hidden;
+    float: right;
+    position: absolute; /*not needed for alt*/  /*possible to do it keeping position:relative; but text alignment is messede up*/
+    /*top: -64px;*/ /*not needed for alt*/  /*needed when position:relative;*/
+    top: 0; /*not needed when position:relative; or alt*/
+    right: 16px;    /*not needed when position:relative; or alt*/
+}
+
+.content {
+    margin: auto;
+    width: 85%;
+}
+.subHeading {
+    border-bottom: solid 2px rgb(255, 193, 255);
+    width: 150px;
+}
+
+.foot {
+    margin: 40px 10px 20px;
+}
+.copyright {
+    font-size: .8em;
+    text-align: center;
+}

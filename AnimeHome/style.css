@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-color: rgb(13, 7, 26);
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+#grad {
+    background-image: linear-gradient(to bottom, rgba(15, 6, 29, 0.5), rgb(13, 7, 26) 90%, rgb(13, 7, 26) 90%), url(./bgimages/animebg.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    /* position: absolute; */
+
+}
+@media screen and (min-width:600px), screen and (orientation:landscape) {
+    #grad {
+        background-image: linear-gradient(to bottom, rgb(15, 6, 29, 0.5), rgb(13, 7, 26) 90%, rgb(13, 7, 26) 90%), url(./bgimages/animebgCropped.png);
+    }
+}
+.mainHeading {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 3.5em;
+}
+@media screen and (max-width:600px) {
+    .mainHeading {
+        font-size: 2.6em;
+    }
+}
+.colorHome {
+    color: rgb(224, 129, 243);
+}
+.tabs {
+    margin: 0;  /*remove the default margin*/
+    list-style: none;
+}
+.tabs li a {
+    float: left;    /*or float left the li and make a to display as inline block*/
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 20px;  /*all sides of the links have padding of 20px*/
+}
+.tabs li a:hover, .tabs li a:active {
+    color: rgb(233, 144, 255);
+}
+.topNav {
+    border-bottom: solid 1px rgba(245, 245, 245, 0.2);
+    padding: 0 16px 0 0; /*top and bottom padding of nav bar is 0*/
+    height: 64px;
+}
+#currentTab {
+    border-bottom: solid 4px rgb(255, 129, 255);
+}
+.logo1 {
+    overflow: hidden;
+    float: right;
+}
+
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #04010a;
+    overflow-x: hidden;
+    padding-top: 64px;
+    transition: 0.4s;
+}
+.sideNav a {
+    color: rgba(245, 245, 245, 0.801);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-weight: 400;
+}
+.sideNav a:hover, .sideNav a:active {
+    color: rgb(241, 184, 255);
+    background-color: rgba(40, 13, 56, 0.5);
+    font-weight: 600;
+}
+#currentMenu{
+    color: rgb(241, 184, 255);
+    background-color: rgba(40, 13, 56, 0.5);
+    font-weight: 500;
+}
+.sideNav .btnClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 400;
+    width: 34px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.openSide a{
+    padding: 14.75px 17px;
+    float: left;
+    box-sizing: border-box;
+}
+.openSide a:hover, .openSide a:active {
+    background-color: rgba(18, 5, 26, 0.486);
+}
+@media(max-width:568px){
+    .tabs{
+        display: none;
+    }
+}
+@media(min-width:568px){
+    .openSide {
+        display: none;
+    }
+  }
+
+.content {
+    margin: auto;
+    width: 85%;
+}
+.subHeading {
+    border-bottom: solid 2px rgb(255, 193, 255);
+    width: 150px;
+}
+.copyright {
+    font-size: .8em;
+    text-align: center;
+    padding: 40px 10px 20px;    /*bottom margin doesn't work on chrome for some reason, so using padding instead*/
+}

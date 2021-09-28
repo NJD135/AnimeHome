@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AnimeHome/All</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="styleAlt.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Sacramento&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="grad"></div>
+        <nav class="topNav">
+            <span class="openSide">
+                <a href="#" onclick="openSideMenu()">
+                    <svg width="30px" height="30px">
+                        <path d="M0,5 25,5" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,14 25,14" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,23 25,23" stroke="#fff" stroke-width="1"/>
+                    </svg>
+                </a>
+            </span>
+            <ul class="tabs">
+                <li><a href="index.html">Home</a></li>
+                <li><a id="currentTab" href="All.html">All</a></li>
+                <li><a href="Watchlist.html">Watchlist</a></li>
+            </ul>
+            <div id="sideMenu" class="sideNav">
+                <a href="#" class="btnClose" onclick="closeSideMenu()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a id="currentMenu" href="./All.html">All</a>
+                <a href="./Watchlist.html">Watchlist</a>
+            </div>
+            <div class="logo1">
+                <a href="./index.html">
+                    <img src="./logo/logo1.png" alt="AH" height="64px">
+                </a>
+            </div>
+        </nav>
+        <header>
+            <h1 class="mainHeading">Anime <span class="colorHome">Home</span></h1>
+        </header>
+        <main class="content">
+        </main>
+
+        <script src="menu.js"></script>
+    </body>
+</html>
